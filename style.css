@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+    padding: 25px;
+}
+/* HEADER SECTION */
+header{
+    background-color: bisque;
+}
+.header-box-1 a{
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-box-1{
+    
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.header-box{
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    
+}
+/* END */
+.center-box{
+    margin: 50px auto;
+    display: flex;
+}
+.center-para-1{
+    font-size: 42px;   
+}
+.center-box-1 {
+    flex-wrap: wrap;
+    width: 50%;
+    line-height: 2.5;
+}
+.center-box-1 p{
+    margin-bottom: 30px;
+}
+.center-para-1 p span:not(.color){
+    display: block;
+    line-height: 1.5;
+}
+/* but div? */
+.center-para-1{
+    margin-bottom: 60px;
+}
+.center-para-2{
+    display: flex;
+    gap: 130px;
+    align-items: center;
+
+}
+.center-para-2 a{
+    text-decoration: none;
+}
+.center-para-2 a:first-child{
+    border: 2px solid white;
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding: 3px 7px;
+}
+.center-para-2 a:last-child i{
+    margin-right: 20px;
+}
+.color{
+    color: blue;
+}
+.center-box-2{
+    width: 50%;
+}
+.next{
+    display: flex;
+    gap: 7px;
+}
+.next1,.next2,.next3{
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: gold;
+    padding: 10px;
+}
+.up h1{
+    margin-bottom: 50px;
+}
+.next1 h2,.next2 h2,.next3 h2{
+    margin: 7px 0px;
+}
+.next1 h5,.next2 h5,.next3 h5{
+    margin-bottom: 7px;
+}
+.next1 p,.next2 p,.next3 p{
+    line-height: 1.7;
+    margin-bottom: 9px;
+}
+.next1 a,.next2 a,.next3 a{
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding: 3px 7px;
+}
+.next1 span,.next2 span,.next3 span{
+    margin-left: 90px;
+}
+.up{
+    margin-bottom: 50px;
+}
+footer{
+    background-color: rgb(253, 198, 131);
+}
+.end-line{
+    text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width:1200px) {
+    .center-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-box-1,.center-box-2{
+        width: 100%;
+    }
+    .center-para-1 p span{
+        display: inline;
+        line-height: 1.5;
+    }
+    .center-para-2{
+        justify-content: center;
+    }
+    .next-inner{
+        display: flex;
+    }
+    
+ }
+
+ @media only screen and (max-width:992px) {
+    .center-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-box-1,.center-box-2{
+        width: 100%;
+    }
+    .center-para-1 p span{
+        display: inline;
+        line-height: 1.5;
+    }
+    .center-para-2{
+        justify-content: center;
+    }
+    
+ }
+ @media only screen and (max-width:768px) {
+    .center-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-box-1,.center-box-2{
+        width: 100%;
+    }
+    .center-para-1 p span{
+        display: inline;
+        line-height: 1.5;
+    }
+    .center-box-1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-box-2{
+        display: flex;
+        justify-content: space-around;
+    }
+    .next{
+        flex-direction: column;
+    }
+    
+ }
+
+ @media only screen and (max-width:576px) {
+    .center-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-box-1,.center-box-2{
+        width: 100%;
+    }
+    .center-para-1 p span{
+        display: inline;
+        line-height: 1.5;
+    }
+    .center-box-1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .center-box-2{
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-around;
+    }
+    .center-para-1{
+        margin-bottom: 0px;
+    }
+    .next{
+        flex-direction: column;
+    }
+    .header-box{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+ }
